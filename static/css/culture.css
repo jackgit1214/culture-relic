@@ -33,3 +33,123 @@
 .nav-tabs > li.active > a ,.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus{
    
 }
+/*轮播（Carousel）项目*/	
+/* jssor slider thumbnail navigator skin 04 css */
+                /*
+                .jssort04 .p            (normal)
+                .jssort04 .p:hover      (normal mouseover)
+                .jssort04 .pav          (active)
+                .jssort04 .pav:hover    (active mouseover)
+                .jssort04 .pdn          (mousedown)
+                */
+
+.jssort04 {
+	position: absolute;
+                    /* size of thumbnail navigator container */
+	width: 600px;
+	height: 60px;
+}
+
+.jssort04 .p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 62px;
+	height: 32px;
+}
+
+.jssort04 .t {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.jssort04 .w, .jssort04 .pav:hover .w {
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	border: #0099FF 1px solid;
+	box-sizing: content-box;
+}
+
+.jssort04 .pdn .w, .jssort04 .pav .w {
+	border-style: dashed;
+}
+
+.jssort04 .c {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 62px;
+	height: 32px;
+	background-color: #000;
+	filter: alpha(opacity=45);
+	opacity: .45;
+	transition: opacity .6s;
+	-moz-transition: opacity .6s;
+	-webkit-transition: opacity .6s;
+	-o-transition: opacity .6s;
+}
+
+.jssort04 .p:hover .c, .jssort04 .pav .c {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.jssort04 .p:hover .c {
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+
+* html .jssort04 .w {
+	width /**/: 62px;
+	height /**/: 32px;
+}
+/* jssor slider arrow navigator skin 07 css */
+                    /*
+                    .jssora07l                  (normal)
+                    .jssora07r                  (normal)
+                    .jssora07l:hover            (normal mouseover)
+                    .jssora07r:hover            (normal mouseover)
+                    .jssora07l.jssora07ldn      (mousedown)
+                    .jssora07r.jssora07rdn      (mousedown)
+                    */
+.jssora07l, .jssora07r {
+	display: block;
+	position: absolute;
+                        /* size of arrow element */
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background: url(img/a07.png) no-repeat;
+	overflow: hidden;
+}
+
+.jssora07l {
+	background-position: -5px -35px;
+}
+
+.jssora07r {
+	background-position: -65px -35px;
+}
+
+.jssora07l:hover {
+	background-position: -125px -35px;
+}
+
+.jssora07r:hover {
+	background-position: -185px -35px;
+}
+
+.jssora07l.jssora07ldn {
+	background-position: -245px -35px;
+}
+
+.jssora07r.jssora07rdn {
+	background-position: -305px -35px;
+}
