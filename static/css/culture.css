@@ -1,51 +1,61 @@
 @CHARSET "UTF-8";
-.navbar{
-	margin-bottom:5px;
+
+.navbar {
+	margin-bottom: 5px;
 }
 
-.breadcrumb{
-	margin-bottom:3px;
-	   padding: 8px 15px;
+.breadcrumb {
+	margin-bottom: 3px;
+	padding: 8px 15px;
 }
 
-.box{
-	margin-bottom:3px;
-	margin-top:3px;
+.box {
+	margin-bottom: 3px;
+	margin-top: 3px;
 }
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-left: 8px;
-    padding-right: 8px;
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+	.col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+	.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+	.col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+	.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+	.col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+	.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+	.col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+	{
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .box-content {
-    padding: 5px 10px 5px 10px;
+	padding: 5px 10px 5px 10px;
 }
 
 /*  tag高度及左右边距*/
-.nav-tabs > li > a {
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
-    line-height: 0.4; 
-    margin-right: 2px;
+.nav-tabs>li>a {
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	line-height: 0.4;
+	margin-right: 2px;
 }
 
 /*tab激活状态及鼠标hover,focus处理*/
-.nav-tabs > li.active > a ,.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus{
-   
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+	{
+	
 }
-/*轮播（Carousel）项目*/	
+/*轮播（Carousel）项目*/
 /* jssor slider thumbnail navigator skin 04 css */
-                /*
+/*
                 .jssort04 .p            (normal)
                 .jssort04 .p:hover      (normal mouseover)
                 .jssort04 .pav          (active)
                 .jssort04 .pav:hover    (active mouseover)
                 .jssort04 .pdn          (mousedown)
                 */
-
 .jssort04 {
 	position: absolute;
-                    /* size of thumbnail navigator container */
+	/* size of thumbnail navigator container */
 	width: 600px;
 	height: 60px;
 }
@@ -86,7 +96,7 @@
 	width: 62px;
 	height: 32px;
 	background-color: #000;
-	filter: alpha(opacity=45);
+	filter: alpha(opacity = 45);
 	opacity: .45;
 	transition: opacity .6s;
 	-moz-transition: opacity .6s;
@@ -95,7 +105,7 @@
 }
 
 .jssort04 .p:hover .c, .jssort04 .pav .c {
-	filter: alpha(opacity=0);
+	filter: alpha(opacity = 0);
 	opacity: 0;
 }
 
@@ -111,7 +121,7 @@
 	height /**/: 32px;
 }
 /* jssor slider arrow navigator skin 07 css */
-                    /*
+/*
                     .jssora07l                  (normal)
                     .jssora07r                  (normal)
                     .jssora07l:hover            (normal mouseover)
@@ -122,7 +132,7 @@
 .jssora07l, .jssora07r {
 	display: block;
 	position: absolute;
-                        /* size of arrow element */
+	/* size of arrow element */
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
@@ -152,4 +162,38 @@
 
 .jssora07r.jssora07rdn {
 	background-position: -305px -35px;
+}
+
+/*5 column */
+.col-lg-2dot4 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 1px solid red;
+}
+
+@media ( min-width : 1200px) {
+	.col-lg-2dot4 {
+		float: left;
+	}
+	.col-lg-2dot4 {
+		width: 20%;
+	}
+	.col-lg-pull-2dot4 {
+		right: 20%;
+	}
+	.col-lg-push-2dot4 {
+		left: 20%;
+	}
+	.col-lg-offset-2dot4 {
+		margin-left: 20%;
+	}
+}
+
+/*模态框窗口调整*/
+.modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 10.43px;
+    padding: 0px 15px;
 }

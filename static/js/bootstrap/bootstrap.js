@@ -963,7 +963,6 @@ if (typeof jQuery === 'undefined') {
     var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
 
     this.$element.trigger(e)
-
     if (this.isShown || e.isDefaultPrevented()) return
 
     this.isShown = true
@@ -985,7 +984,6 @@ if (typeof jQuery === 'undefined') {
 
     this.backdrop(function () {
       var transition = $.support.transition && that.$element.hasClass('fade')
-
       if (!that.$element.parent().length) {
         that.$element.appendTo(that.$body) // don't move modals dom position
       }
@@ -993,7 +991,6 @@ if (typeof jQuery === 'undefined') {
       that.$element
         .show()
         .scrollTop(0)
-
       that.adjustDialog()
 
       if (transition) {
@@ -1067,6 +1064,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Modal.prototype.resize = function () {
+	  
     if (this.isShown) {
       $(window).on('resize.bs.modal', $.proxy(this.handleUpdate, this))
     } else {
@@ -1150,10 +1148,12 @@ if (typeof jQuery === 'undefined') {
 
   Modal.prototype.adjustDialog = function () {
     var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
-
+    var $modalcontent = this.$element.find(".modal-content");
+    var top = (this.$element.height() - $modalcontent.height() - 30) / 2; //30为madal-dialog的上边距
     this.$element.css({
       paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-      paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
+      paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : '',
+      paddingTop:top
     })
   }
 

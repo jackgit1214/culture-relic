@@ -67,7 +67,8 @@
 	    //responsive code begin
 	    //you can remove responsive code if you don't want the slider scales while window resizes
 	    function ScaleSlider() {
-	        var bodyWidth = document.body.clientWidth;
+	        //var bodyWidth = document.body.clientWidth;
+	        var bodyWidth = $("#content").width();
 	        if (bodyWidth) jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 980));
 	        else window.setTimeout(ScaleSlider, 30);
 	    }
@@ -99,7 +100,8 @@
                     <div>
                         <div style="position: absolute; width: 480px; height: 300px; top: 10px; left: 10px;
                             text-align: left; line-height: 1.8em; font-size: 12px;">
-                           <h1>描述</h1>
+                           <h1>精品文物</h1>
+                           <h3>文物描述</h3>
                         </div>
                         <img src="static/images/scroll/s2.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="static/images/scroll/s2t.jpg" />
@@ -107,7 +109,7 @@
                     <div>
                         <div style="position: absolute; width: 480px; height: 300px; top: 10px; left: 10px;
                             text-align: left; line-height: 1.8em; font-size: 12px;">
-                           <h1>描述</h1>
+                           <h1>精品文物</h1>
                         </div>
                         <img src="static/images/scroll/s3.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="static/images/scroll/s3t.jpg" />
@@ -115,7 +117,7 @@
                     <div>
                         <div style="position: absolute; width: 480px; height: 300px; top: 10px; left: 10px;
                             text-align: left; line-height: 1.8em; font-size: 12px;">
-                           <h1>描述</h1>
+                           <h1>精品文物</h1>
                         </div>
                         <img src="static/images/scroll/s4.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="static/images/scroll/s4t.jpg" />
