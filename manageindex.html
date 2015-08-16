@@ -144,68 +144,41 @@
 						<div class="nav-sm nav nav-stacked"></div>
 						<ul class="nav nav-pills nav-stacked main-menu">
 							<li class="nav-header">Main</li>
-							<li><a href="#"><i
+							<li ><a href="javascript:;" data-link="collection/index.html"><i
 									class="glyphicon glyphicon-eye-open"
 								></i><span> 征集</span></a></li>
-							<li><a href="#"><i
+							<li class="active"><a href="javascript:;" data-link="safekeep/index.html"><i
 									class="glyphicon glyphicon-edit"
 								></i><span> 藏品保管</span></a></li>
-							<li><a href="chart.html"><i
+							<li><a href="javascript:;" data-link="catalog/index.html"><i
 									class="glyphicon glyphicon-list-alt"
 								></i><span>藏品编目</span></a></li>
-							<li><a href="typography.html"><i
+							<li><a href="javascript:;" data-link="storehouse/index.html"><i
 									class="glyphicon glyphicon-font"
 								></i><span> 库房管理</span></a></li>
-							<li><a href="gallery.html"><i
+							<li><a href="javascript:;" data-link="appraisal/index.html"><i
 									class="glyphicon glyphicon-picture"
 								></i><span> 藏品鉴定</span></a></li>
-							<li class="nav-header hidden-md">Sample Section</li>
-							<li><a href="table.html"><i
+							<li><a href="javascript:;" data-link="exhibition/index.html"><i
 									class="glyphicon glyphicon-align-justify"
 								></i><span> 藏品展览</span></a></li>
-							<li class="accordion"><a href="#"><i
-									class="glyphicon glyphicon-plus"
-								></i><span> Accordion Menu</span></a>
-								<ul class="nav nav-pills nav-stacked">
-									<li><a href="#">Child Menu 1</a></li>
-									<li><a href="#">Child Menu 2</a></li>
-								</ul></li>
-							<li><a href="calendar.html"><i
+							<li><a href="javascript:;" data-link="repair/index.html"><i
 									class="glyphicon glyphicon-calendar"
 								></i><span> 藏品修复</span></a></li>
-							<li><a href="grid.html"><i
+							<li><a href="javascript:;" data-link="digitalresource/index.html"><i
 									class="glyphicon glyphicon-th"
 								></i><span> 数字资源</span></a></li>
 						</ul>
-						<label
-							id="for-is-ajax"
-							for="is-ajax"
-						><input
-							id="is-ajax"
-							type="checkbox"
-						> Ajax on menu</label>
 					</div>
 				</div>
 			</div>
-			<div
-				id="content"
-				class="col-lg-10 col-sm-10"
-			>
-				<div>
-					<ul class="breadcrumb">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Dashboard</a></li>
-					</ul>
-				</div>
-				<div class=" row">
-					<div class="col-md-3 col-sm-3 col-xs-6">ddd</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">b</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">d</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">d</div>
-				</div>
+			<div id="content" class="col-lg-10 col-sm-10">
+				
 			</div>
 		</div>
-		<footer class="row">
+		
+	</div>
+<footer class="row navbar-fixed-bottom">
 			<p class="col-md-9 col-sm-9 col-xs-12 copyright">
 				&copy; <a
 					href="http://usman.it"
@@ -215,8 +188,7 @@
 			<p class="col-md-3 col-sm-3 col-xs-12 powered-by">
 				Powered by: <a href="#">Charisma</a>
 			</p>
-		</footer>
-	</div>
+</footer>	
 	<script
 		src="static/js/bootstrap/bootstrap.js"
 		type="text/javascript"
@@ -243,7 +215,7 @@
 	></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			relic.manageRead();
+			relic.manageReady();
 		});
 	</script>
 </body>

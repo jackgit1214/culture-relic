@@ -520,7 +520,7 @@ ul.main-menu li:not(.nav-header) {
 }
 
 .whitespace:before {
-    content: "\2122";
+    content: "\\2122";
     color: transparent !important;
 }
 
