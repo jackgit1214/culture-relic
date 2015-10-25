@@ -11,7 +11,56 @@
 		<div class="box-header well" data-original-title="tttttttttt" >
 			<h2> <i class="glyphicon glyphicon-picture"></i> Gallery </h2>
 		</div> -->
-			<div class="box-content"></div>
+			<div class="box-content">
+					<TABLE class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+						 <thead>
+							<TR>
+								<th><input  type="checkbox" id=chkall/></th>
+								<th>序号</th>
+								<th>文物名称</th>
+								<th>文物来源</th>
+								<th>文物数量</th>
+								<th>凭证编号</th>
+								<th>总账号</th>
+								<th>文物级别</th>
+							</TR>
+						</thead>
+						<tbody>
+							<TR>
+								<TD><input  type="checkbox"/></TD>
+								<TD>1</TD>
+								<TD>文物A</TD>
+								<TD></TD>
+								<TD></TD>
+								<TD></TD>
+								<TD></TD>
+								<TD></TD>
+							</TR>
+						</tbody>
+					</TABLE>
+					 <ul class="pagination pagination-centered">
+                        <li><a href="#">Prev</a></li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+			</div>
 		</div>
 	</div>
 </div>
+<script>
+$(document).ready(function() {
+	$('.datatable').dataTable({
+	    "sDom": "<'row'<'col-md-6'l><'col-md-6'f>r>t<'row'<'col-md-12'i><'col-md-12 center-block'p>>",
+	    "sPaginationType": "bootstrap",
+	    "oLanguage": {
+	        "sLengthMenu": "_MENU_ records per page"
+	    }
+	});
+});
+
+</script>
