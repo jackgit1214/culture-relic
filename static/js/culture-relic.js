@@ -9,7 +9,7 @@ function docReady() {
 var relic = {
 	homeRead : function() {
 		$("#myCarousel").load("portal/scroll.html", function() {
-
+				
 		});
 		$("#myModal").on("hidden.bs.modal", function() {
 			$(this).removeData("bs.modal");
@@ -62,6 +62,7 @@ var relic = {
 	        $("#content").load($clink.data("link"),function(){
 	        	$clink.parent('li').addClass('active');
 	        	//$('#loading').remove();
+	            
 	        });
 	    });
 	    
